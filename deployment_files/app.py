@@ -2,8 +2,10 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
 # Load the trained model
+@st.cache_resource
 def load_model():
     # Get the directory where app.py is located
     app_dir = Path(__file__).resolve().parent
