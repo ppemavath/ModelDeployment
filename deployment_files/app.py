@@ -5,7 +5,14 @@ import joblib
 
 # Load the trained model
 def load_model():
-    return joblib.load("churn_prediction_model_v1_0.joblib")
+    # Get the directory where app.py is located
+    app_dir = Path(__file__).resolve().parent
+
+    # Build the absolute path to the trained model
+    model_path = app_dir / "churn_prediction_model_v1_0.joblib"
+
+    # Load the saved model
+    return joblib.load(model_path)
 
 model = load_model()
 
