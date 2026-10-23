@@ -9,7 +9,7 @@ app_dir = Path(__file__).resolve().parent
 app = Flask("Boston House Predictor ")
 
 # Load the trained Boston housing model
-model = joblib.load(app_dir / "backend_files/boston_housing_model_v1_0.joblib")
+model = joblib.load(app_dir / "boston_housing_model_v1_0.joblib")
 
 # Define a route for the home page
 @app.get('/')
