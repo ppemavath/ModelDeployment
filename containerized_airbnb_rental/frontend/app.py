@@ -75,7 +75,7 @@ property_data = {
     "accommodates": accommodates,
     "bathrooms": bathrooms,
     "cancellation_policy": cancellation_policy,
-    "cleaning_fee": cleaning_fee,
+    "cleaning_fee": cleaning_fee == "True",
     "instant_bookable": "t" if instant_bookable == "True" else "f",
     "review_scores_rating": review_scores_rating,
     "bedrooms": bedrooms,
